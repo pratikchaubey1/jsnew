@@ -11,6 +11,6 @@ function add(a, b) {
 }
 
 // Example usage
-let userName = "Pratik";
+let userName = "atul";
 console.log(greet(userName)); // Prints greeting
 console.log("Sum of 5 and 10 is:", add(5, 10)); // Prints sum
