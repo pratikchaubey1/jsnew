@@ -1,50 +1,32 @@
-// Simple JavaScript Program
+// Example using let and const
 
-// Function to greet a user
-function greet(name) {
-    return `Hello, ${name}! Welcome to JavaScript.`;
-}
+// const → value change nahi hoti
+const appName = "My JavaScript App";
+console.log("App Name:", appName);
 
-// Add two numbers
-function add(a, b) {
-    return a + b;
-}
+// let → value change ho sakti hai
+let counter = 0;
+console.log("Counter start:", counter);
 
-// Subtract two numbers
-function subtract(a, b) {
-    return a - b;
-}
+// Counter ko update karna
+counter = counter + 1;
+console.log("Counter after increment:", counter);
 
-// Multiply two numbers
-function multiply(a, b) {
-    return a * b;
-}
+// const array ka example (array ka reference fix hota hai, lekin data change ho sakta hai)
+const fruits = ["Apple", "Banana"];
+console.log("Fruits:", fruits);
 
-// Divide two numbers
-function divide(a, b) {
-    if (b === 0) {
-        return "Error: Division by zero!";
-    }
-    return a / b;
-}
+// Array me naya fruit add karna
+fruits.push("Mango");
+console.log("Fruits after push:", fruits);
 
-// Check if a number is even or odd
-function checkEvenOdd(num) {
-    return num % 2 === 0 ? "Even" : "Odd";
-}
+// const object ka example
+const user = {
+    name: "Pratik",
+    age: 22
+};
+console.log("User:", user);
 
-// Reverse a string
-function reverseString(str) {
-    return str.split("").reverse().join("");
-}
-
-// Example usage
-let userName = "atul";
-console.log(greet(userName)); 
-
-console.log("Sum of 5 and 10 is:", add(5, 10)); 
-console.log("Difference of 10 and 3 is:", subtract(10, 3));
-console.log("Product of 4 and 6 is:", multiply(4, 6));
-console.log("Division of 20 by 4 is:", divide(20, 4));
-console.log("Check if 7 is even or odd:", checkEvenOdd(7));
-console.log("Reverse of 'JavaScript' is:", reverseString("JavaScript"));
+// Object ke property change kar sakte ho
+user.age = 23;
+console.log("User after age update:", user);
